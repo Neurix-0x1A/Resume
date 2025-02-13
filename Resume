@@ -1,0 +1,81 @@
+\documentclass[a4paper,10pt]{article}
+
+% Import packages
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{fontawesome}
+
+% Page settings
+\geometry{top=0.75in, bottom=0.75in, left=0.75in, right=0.75in}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+
+% Custom commands for contact info
+\newcommand{\contactinfo}[3]{
+    \noindent\textbf{\Large #1} \\
+    \texttt{#2} \hfill \faPhone\ #3
+}
+
+% Document
+\begin{document}
+
+% Contact Info
+\contactinfo{John Doe}{johndoe@example.com}{+1-234-567-8900}
+
+% Summary
+\section*{Summary}
+Software engineer passionate about building scalable web and mobile applications with strong foundations in software development principles and modern web technologies.
+
+% Education
+\section*{Education}
+\textbf{Bachelor of Science, Computer Science} — Lorem Ipsum University, Dolor Sit Amet, CA \hfill May 2025 \\
+GPA: 3.8/4.0 | Relevant Coursework: Data Structures, Algorithms, Web Development, Machine Learning, Cloud Computing
+
+% Experience
+\section*{Experience}
+\textbf{Software Engineer Intern} — Lorem Ipsum Inc., San Francisco, CA \hfill Jun 2024 – Aug 2024
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+    \item Developed features that increased web app engagement by 15\%.
+    \item Automated analysis tasks, reducing processing time by 20\%.
+    \item Fixed software bugs in collaboration with cross-functional teams.
+\end{itemize}
+
+\textbf{Frontend Developer Intern} — Dolor Sit Inc., Los Angeles, CA \hfill Jan 2024 – May 2024
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+    \item Built mobile-first UIs for an e-commerce platform, enhancing UX.
+    \item Implemented unit testing, ensuring 99\% test coverage.
+    \item Collaborated with UX teams on product refinement.
+\end{itemize}
+
+% Projects
+\section*{Projects}
+\textbf{Data Visualization Dashboard:} Interactive financial dashboard using React and D3.js. \\
+\textbf{Task Management Mobile App:} Cross-platform app using Flutter and Firebase. \\
+\textbf{Prompt Enhancer for LLMs:} Optimized user prompts for better LLM responses.
+
+% Skills
+\section*{Skills}
+\textbf{Programming:} Python, JavaScript, C++, Java \\
+\textbf{Web Dev:} HTML, CSS, React.js, Node.js \\
+\textbf{Databases:} MySQL, MongoDB, Firebase \\
+\textbf{Cloud:} AWS (EC2, S3, Lambda), GCP \\
+\textbf{Tools:} Git, Docker, Jenkins \\
+\textbf{Languages:} English, Spanish
+
+% Certifications
+\section*{Certifications}
+AWS Certified Cloud Practitioner, Google Data Analytics Certificate
+
+% Awards
+\section*{Awards}
+Dean’s List (2022–2024), Hackathon XYZ Winner (2024)
+
+% Interests
+\section*{Interests}
+Web development, cloud computing, AI research, hiking, photography
+
+\end{document}
+
